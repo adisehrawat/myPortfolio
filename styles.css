@@ -170,27 +170,17 @@ nav ul a {
 }
 
 .content {
-    align-items: center;
     display: flex;
-    gap: 10rem;
-    height: 95rem;
-    width: 120rem;
     justify-content: center;
+    align-items: center;
+    height: 65rem;
+    gap: 10rem;
     position: relative;
-    position: relative;
-    flex-wrap: wrap;
-    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
-        25px 35px 20px rgba(0, 0, 0, 0.05),
-        25px 20px 20px rgba(0, 0, 0, 0.05),
-        inset 25px 30px 30px rgba(255, 255, 255, 0.9);
-    animation: slide 3s infinite;
-    margin: 20px 30px 30px 0;
 
     @media (max-width: 900px) {
         flex-direction: column;
         text-align: center;
-        height:auto;
-        max-width: 54rem;
+        height: auto;
         gap: 3rem;
     }
 
@@ -203,19 +193,6 @@ nav ul a {
     }
 }
 
-@keyframes slide {
-    0% {
-        border-radius: 67% 33% 28% 72% / 59% 52% 48% 41%;
-    }
-
-    50% {
-        border-radius: 15% 85% 53% 47% / 55% 41% 59% 45%;
-    }
-
-    100% {
-        border-radius: 67% 33% 28% 72% / 59% 52% 48% 41%;
-    }
-}
 
 .adi-main {
     align-items: center;
@@ -527,20 +504,22 @@ nav ul a {
         }
     }
 
-    &__main-img {
-        width: 41rem;
-        height: 35rem;
-        border-radius: 1.7rem;
-        margin-right: 30px;
 
-        @media (max-width: 1020px) {
-            margin-bottom: 3.5rem;
-        }
+}
 
-        @media (max-width: 460px) {
-            width: 90%;
-            height: auto;
-        }
+.img-side__main-img {
+    width: 41rem;
+    height: 35rem;
+    border-radius: 1.7rem;
+    margin-right: 30px;
+
+    @media (max-width: 1020px) {
+        margin-bottom: 3.5rem;
+    }
+
+    @media (max-width: 460px) {
+        width: 90%;
+        height: auto;
     }
 }
 
