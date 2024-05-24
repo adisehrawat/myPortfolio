@@ -190,7 +190,7 @@ nav ul a {
         flex-direction: column;
         text-align: center;
         height:auto;
-        width: 60rem;
+        max-width: 54rem;
         gap: 3rem;
     }
 
